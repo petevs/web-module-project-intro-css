@@ -1,0 +1,176 @@
+/* Code Reset */
+
+html, body, div, span, applet, object, iframe,  
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,  
+a, abbr, acronym, address, big, cite, code,  
+del, dfn, em, img, ins, kbd, q, s, samp,  
+small, strike, strong, sub, sup, tt, var,  
+b, u, i, center,  
+dl, dt, dd, ol, ul, li,  
+fieldset, form, label, legend,  
+table, caption, tbody, tfoot, thead, tr, th, td,  
+article, aside, canvas, details, embed,  
+figure, figcaption, footer, header, hgroup,  
+menu, nav, output, ruby, section, summary,  
+time, mark, audio, video {
+    box-sizing: border-box;
+    text-decoration: none;
+    color: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'roboto', monospace;
+}
+
+body {
+    line-height: 1;
+    font-size: 1.4rem;
+}
+
+strong {
+    font-weight: 700;
+}
+
+a:hover {
+    color: #FF764E;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.4rem;
+    color: white;
+    padding: 2%;
+}
+
+nav a {
+    padding: 8px 16px;
+    border-radius: 10px;
+    color: #ffffff;
+    width: 125px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+nav a:first-of-type {
+    background-color: #FF764E;
+}
+
+nav a:nth-of-type(2) {
+    background-color: #5ED3EB;
+}
+
+nav a:nth-of-type(3) {
+    background-color: #FFCD69
+}
+
+nav a:hover {
+    color: inherit;
+    transition: 450ms;
+    transform: scale(1.1);
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,.15);
+}
+
+header, section {
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+}
+
+
+.header-image {
+    width: 25%;
+}
+
+.header-content {
+    width: 75%;
+}
+
+.header-content p:nth-of-type(2){
+    width: 300px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+
+h1 {
+    font-family: 'Chelsea Market', cursive;
+    font-size: 4rem;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+section.about {
+    background-color: #DDB9A3;
+    color: #ffffff;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+section p {
+    padding: 5px;
+}
+
+section.info-box {
+    width: 325px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+}
+
+section.info-box img {
+    width: 33.3333%;
+}
+
+footer {
+    margin-top: 40px;
+    padding-top: 250px;
+    background-image: url('assets/footer_img.jpg');
+    background-size: cover;
+    background-position: 0% 20%;
+    background-repeat: no-repeat;
+}
+
+footer nav {
+    background-color: #F9E7DC;
+    padding: 20px;
+}
+
+/*mobile code for main hero */
+@media only screen and (max-width: 600px) {
+
+    .header-image {
+        width: 100%;
+    }
+
+    header img {
+        width: 33%;
+    }
+
+    .header-content {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+}
