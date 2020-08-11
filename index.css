@@ -1,36 +1,27 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+/* Code Reset */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
+html, body, div, span, applet, object, iframe,  
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,  
+a, abbr, acronym, address, big, cite, code,  
+del, dfn, em, img, ins, kbd, q, s, samp,  
+small, strike, strong, sub, sup, tt, var,  
+b, u, i, center,  
+dl, dt, dd, ol, ul, li,  
+fieldset, form, label, legend,  
+table, caption, tbody, tfoot, thead, tr, th, td,  
+article, aside, canvas, details, embed,  
+figure, figcaption, footer, header, hgroup,  
+menu, nav, output, ruby, section, summary,  
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: inherit;
+    margin: 0;
+    padding: 0;
 }
 
 html {
-    font-size: 10px;
+    font-size: 62.5%;
     font-family: 'roboto', monospace;
 }
 
@@ -38,29 +29,9 @@ body {
     line-height: 1;
     font-size: 1.4rem;
 }
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
 
 strong {
     font-weight: 700;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
 }
 
 a:hover {
@@ -76,10 +47,10 @@ nav {
 }
 
 nav a {
-    padding: 5px 10px;
-    border-radius: 6px;
+    padding: 8px 16px;
+    border-radius: 10px;
     color: #ffffff;
-    width: 100px;
+    width: 125px;
     text-align: center;
     text-transform: capitalize;
 }
@@ -98,7 +69,9 @@ nav a:nth-of-type(3) {
 
 nav a:hover {
     color: inherit;
+    transition: 450ms;
     transform: scale(1.1);
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,.15);
 }
 
 header, section {
@@ -115,24 +88,28 @@ header {
     padding: 30px;
 }
 
-header p:nth-of-type(2) {
-    padding: 0px 120px;
-}
 
-.col-3 {
+.header-image {
     width: 25%;
 }
 
-.col-9 {
+.header-content {
     width: 75%;
+}
+
+.header-content p:nth-of-type(2){
+    width: 300px;
+    margin: 0 auto;
+    padding-top: 20px;
 }
 
 
 h1 {
     font-family: 'Chelsea Market', cursive;
-    font-size: 4.5rem;
+    font-size: 4rem;
     letter-spacing: 1px;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 header img {
@@ -144,22 +121,23 @@ section.about {
     background-color: #DDB9A3;
     color: #ffffff;
     text-align: center;
-    padding: 5px 10px;
+    padding: 5px;
+    margin-bottom: 10px;
 }
 
-p {
-    margin: 10px 0px;
+section p {
+    padding: 5px;
 }
 
 section.info-box {
-    width: 300px;
+    width: 325px;
     margin: 0 auto;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
 }
 
 section.info-box img {
-    width: 50%;
+    width: 33.3333%;
 }
 
 footer {
@@ -173,4 +151,26 @@ footer {
 
 footer nav {
     background-color: #F9E7DC;
+    padding: 20px;
+}
+
+/*mobile code for main hero */
+@media only screen and (max-width: 600px) {
+
+    .header-image {
+        width: 100%;
+    }
+
+    header img {
+        width: 33%;
+    }
+
+    .header-content {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
 }
